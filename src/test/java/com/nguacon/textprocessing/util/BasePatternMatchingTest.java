@@ -2,6 +2,7 @@ package com.nguacon.textprocessing.util;
 
 
 import com.nguacon.textprocessing.patternmatching.PatternMatchingAlgorithm;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -16,9 +17,12 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class BasePatternMatchingTest {
+public abstract class BasePatternMatchingTest {
 
     private PatternMatchingAlgorithm patternMatchingAlgorithm;
+
+    @Before
+    public abstract void setUp();
 
     public List<MatchStringObj> readTestCase(String fileName) throws IOException {
         List<MatchStringObj> results = new ArrayList<>();

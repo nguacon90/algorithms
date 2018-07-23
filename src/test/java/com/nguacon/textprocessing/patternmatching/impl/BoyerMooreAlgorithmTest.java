@@ -5,11 +5,8 @@ import org.junit.Before;
 
 public class BoyerMooreAlgorithmTest  extends BasePatternMatchingTest {
 
-    private BoyerMooreAlgorithm boyerMooreAlgorithm;
-
-    @Before
+    @Override
     public void setUp() {
-        boyerMooreAlgorithm = new BoyerMooreAlgorithm();
-        super.setPatternMatchingAlgorithm(boyerMooreAlgorithm);
+        super.setPatternMatchingAlgorithm(new BoyerMooreAlgorithm());
     }
 }

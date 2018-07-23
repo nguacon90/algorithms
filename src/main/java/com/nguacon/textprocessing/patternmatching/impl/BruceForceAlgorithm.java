@@ -2,6 +2,11 @@ package com.nguacon.textprocessing.patternmatching.impl;
 
 import com.nguacon.textprocessing.patternmatching.PatternMatchingAlgorithm;
 
+/**
+ * n: text length
+ * m: pattern length
+ * Performance: O(n * m)
+ */
 public class BruceForceAlgorithm implements PatternMatchingAlgorithm {
 
     @Override

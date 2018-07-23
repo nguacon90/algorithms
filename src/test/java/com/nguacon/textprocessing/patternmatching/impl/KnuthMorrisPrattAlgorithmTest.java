@@ -1,12 +1,11 @@
 package com.nguacon.textprocessing.patternmatching.impl;
 
 import com.nguacon.textprocessing.util.BasePatternMatchingTest;
-import org.junit.Before;
 
-public class BruceForceAlgorithmTest extends BasePatternMatchingTest {
+public class KnuthMorrisPrattAlgorithmTest extends BasePatternMatchingTest {
 
     @Override
     public void setUp() {
-        super.setPatternMatchingAlgorithm(new BruceForceAlgorithm());
+        super.setPatternMatchingAlgorithm(new KnuthMorrisPrattAlgorithm());
     }
 }

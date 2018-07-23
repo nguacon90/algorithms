@@ -5,6 +5,12 @@ import com.nguacon.textprocessing.patternmatching.PatternMatchingAlgorithm;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * n: text length
+ * m: pattern length
+ * Performance: O(n + m)
+ * - worse case: O(n * m)
+ */
 public class BoyerMooreAlgorithm  implements PatternMatchingAlgorithm {
 
     @Override
